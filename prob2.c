@@ -2,8 +2,8 @@
 int main(void){
     // Let's challenge in my favorite language!!
     int a;
-    scanf("%d", &a);
-    int out[7] = {0};
+    scanf("%d", &a); //Define how many input (Can be divided by 7)
+    int out[7] = {0}; //There's seven days in a week
 
     for (int i = 0, b = 0, c; i < a; i++) {
         scanf("%d", &c);
