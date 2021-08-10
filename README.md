@@ -1,2 +1,2 @@
 # answerpohenshura
-My Solution to uint32_t tmp https://paiza.jp/poh/enshura
+My Solution to https://paiza.jp/poh/enshura
