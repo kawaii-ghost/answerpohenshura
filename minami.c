@@ -28,7 +28,11 @@ int main(void) {
     }
     for (int i = 0; i < b; i++) {
         for (int n = 0; n < a; n++) {
-            n == a - 1 ? printf("%d\n", arr[n][i]) : printf("%d ", arr[n][i]);
+            if (n == a - 1){
+                printf("%d\n", arr[n][i]);
+            } else {
+                printf("%d ", arr[n][i]);
+            }
         }
     }
     return 0;
