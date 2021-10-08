@@ -10,6 +10,6 @@ int main(void){
             break;
         }
     }
-    puts("");
+    putchar('\n'); // Newline
     return 0;
 }
