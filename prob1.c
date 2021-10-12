@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main(void){
     // Let's challenge in my favorite language!!
-    char str[1000];
+    char str[101];
     fgets(str, sizeof(str), stdin);
     //Didn't need to check if odd anymore if you add it two times (i += 2) :O
     for (int i = 0; str[i] != '\0'; i += 2){ // Loop until find '\0'
