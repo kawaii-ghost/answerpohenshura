@@ -1,7 +1,6 @@
 #include <stdio.h>
 /* Maximal character input is 100 char */
 #define MAX 100
-
 int main(void){
     /* Let's challenge in my favorite language!! */
     int i;
