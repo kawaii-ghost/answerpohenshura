@@ -14,7 +14,6 @@ int main(void) {
         getchar();
 
         arr[b] += tmp;
-        
         /* Change b value into zero if b equals to 6 */
         b == 6 ? b = 0 : b++;
     }
