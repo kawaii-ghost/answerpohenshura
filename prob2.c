@@ -4,6 +4,9 @@
 int main(void) {
     /* Let's challenge in my favorite language!! */
     int i, n, b = 0, tmp;
+    /* Declare an array named arr and initialize 
+     * all of array member to zero 
+     */
     int arr[WEEK] = {0};
 
     scanf("%d", &n);
