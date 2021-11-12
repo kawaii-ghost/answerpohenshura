@@ -1,28 +1,26 @@
 #include <stdio.h>
-int main(void){
-    // Let's challenge in my favorite language!!
-    int a;
-    scanf("%d", &a); 
-    getchar();
-    /* 
-     * Define how many inputs would be later 
-     * and must be a multiple of 7
-     */
-    
-    
-    int out[7] = {}; 
-    // There are seven days in a week 
-    // and initializing all of them to zero.
 
-    for (int i = 0, b = 0, c; i < a; i++) {
-        scanf("%d", &c);
+#define WEEK 7
+
+int main(void) {
+    int i, n, b = 0, tmp;
+    int arr[WEEK] = {0};
+
+    scanf("%d", &n);
+    getchar();
+
+    for (i = 0; i < n; i++){
+        scanf("%d", &tmp);
         getchar();
-        
-        out[b] += c;
+
+        arr[b] += tmp;
+
         b == 6 ? b = 0 : b++;
     }
-    for (int i = 0; i < 7; i++) { 
-        printf("%d\n", out[i]);
+
+    for (i = 0; i < WEEK; ++i) {
+        printf("%d\n", arr[i]);
     }
+
     return 0;
 }
