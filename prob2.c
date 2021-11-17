@@ -1,11 +1,13 @@
 #include <stdio.h>
 /* There are 7 days in a week */
 #define WEEK 7
-int main(void) {
+
+int main(void)
+{
     /* Let's challenge in my favorite language!! */
     int i, n, b = 0, tmp;
     /* Declare an array named arr and initialize 
-     * all of array member to zero 
+     * all the member to zero 
      */
     int arr[WEEK] = {0};
 
