@@ -5,17 +5,15 @@
 int main(void)
 {
     /* Let's challenge in my favorite language!! */
-    int i;
+
     /* One more bytes for NULL character */
-    char str[MAX + 1];
+    char str[MAX + 1] = {'\0'};
 
-    fgets(str, sizeof(str), stdin);
+    scanf("%100[^\n]", str);
+    getchar();
 
-    for (i = 0; str[i] != '\0'; i += 2){
+    for (int i = 0; str[i] != '\0'; i += 2){
         putchar(str[i]);
-        /* In case strlen(str) isn't odd */
-	if (str[i + 1] == '\0')
-	    break;
     }
 
     putchar('\n');
