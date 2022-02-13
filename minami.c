@@ -26,11 +26,11 @@ int main(void)
                 arr[n][i] = 0;
         }
     }
-
+	
+	
+    b -= 1;
     for (n = 0; n < a; n++) {
         for (i = b - 2; i >= 0; i--) {
-            b -= 1;
-
             do {
 	        up = &arr[n][i];
             	down = &arr[n][i + 1];
@@ -44,21 +44,17 @@ int main(void)
 
                 i++;
             } while (i < b);
-
-            b += 1;
         }
     }
+    b += 1;
 
-
+	
+    a -= 1;
     for (i = 0; i < b; i++) {
-	a -= 1;
-
         for (n = 0; n < a; n++) {
             printf("%d ", arr[n][i]);
         }
         printf("%d\n", arr[n][i]);
-
-        a += 1;
     }
 
     return 0;
