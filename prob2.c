@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <inttypes.h>
 
-/* There are 7 days in a week */
 #define WEEK 7
 
 int main(void)
