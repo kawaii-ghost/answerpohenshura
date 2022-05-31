@@ -5,21 +5,18 @@
 int main(void)
 {
     /* Let's challenge in my favorite language!! */
-    int a, b, i, n;
-    /*
-     * Actually I don't need pointer var
-     * but it's used for better readability
-     */
-    int *up, *down;
-    int arr[MAX][MAX];
+    int_fast8_t a, b;
 
-    scanf("%d %d", &a, &b);
+    int *up, *down;
+    int_fast8_t arr[MAX][MAX];
+
+    scanf("%" SCNdFAST8 " %" SCNdFAST8, &a, &b);
     getchar();
 
 
-    for (i = 0; i < b; i++) {
-        for (n = 0; n < a; n++) {
-            scanf("%d", &arr[n][i]);
+    for (size_t i = 0; i < b; i++) {
+        for (size_t n = 0; n < a; n++) {
+            scanf("%" SCNdFAST8, &arr[n][i]);
             getchar();
 
             if (arr[n][i] == 2)
@@ -29,13 +26,13 @@ int main(void)
 	
 	
     b -= 1;
-    for (n = 0; n < a; n++) {
-        for (i = b - 2; i >= 0; i--) {
+    for (size_t n = 0; n < a; n++) {
+        for (size_t i = b - 2; i >= 0; i--) {
             do {
 	        up = &arr[n][i];
             	down = &arr[n][i + 1];
 
-                if (*up == 1 && *down == 0) {
+                if (*up && !*down) {
                     *up = 0;
                     *down = 1;
                 } else {
