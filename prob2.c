@@ -6,6 +6,7 @@
 int main(void)
 {
     /* Let's challenge in my favorite language!! */
+    setvbuf(stdout, NULL, _IOFBF, 0);
     uint_fast8_t n;
     int_fast8_t b = 0;
     
@@ -24,9 +25,6 @@ int main(void)
         b == 6 ? b = 0 : b++;
     }
 
-    for (size_t i = 0; i < WEEK; i++) {
+    for (size_t i = 0; i < WEEK; i++)
         printf("%" PRIdFAST32 "\n", arr[i]);
-    }
-
-    return 0;
 }
